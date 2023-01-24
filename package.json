@@ -1,0 +1,27 @@
+{
+  "name": "karmadene",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "karma start",
+    "test1": "karma start karma.conf.js",
+    "debug": "karma start karma.conf.js --log-level debug --single-run",
+    "sauce": "karma start karma-sauce.conf.js",
+    "sauce1": "karma start karma-sauce.conf.js --single-run",
+    "clean": "rimraf sauce_connect.*"
+  },
+  "devDependencies": {
+    "jasmine-core": "^4.5.0",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-sauce-launcher": "^4.3.6"
+  },
+  "dependencies": {
+    "rimraf": "^4.1.1"
+  }
+}
