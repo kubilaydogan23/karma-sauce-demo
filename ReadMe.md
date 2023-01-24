@@ -37,8 +37,13 @@ and create a new script:
     "sauce": "karma start karma-sauce.conf.js",
   },
 ```
+Run tests: `npm run sauce` <BR>
+Result:
+<img src="saucelabs.png"></img>
 
-Sample for `karma-sauce.conf.js`:
+<br>
+
+**Sample for `karma-sauce.conf.js`:**
 ```js
 module.exports = function (config) {
   if (!process.env.SAUCE_USERNAME || !process.env.SAUCE_ACCESS_KEY) {
